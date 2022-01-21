@@ -12,8 +12,8 @@ public class Friday extends JComponent {
         Unicorn c = new Unicorn(); 
         Horse d = new Unicorn(); 
         // Unicorn e = new Horse(); 
-        b.talk(); // Howdy 
-        c.talk(); // Howdy 
-        d.talk(); // Howdy
+        b.talk(); // Howdy
+        c.talk(); // Bonjour
+        d.talk(); // Bonjour
     }
 }
