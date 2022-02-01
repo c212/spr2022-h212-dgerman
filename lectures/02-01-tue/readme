@@ -1,0 +1,12 @@
+public class One {
+  int x;
+  int fun() {
+    return (int)(Math.random() * 100);
+  }
+
+  public static void main(String[] args) {
+    One jack = new One(); 
+    int a = jack.fun();  // eddy is no longer worried about this line
+    System.out.println( a ); // "Hi, Teddy!" ); 
+  }
+}
