@@ -30,9 +30,14 @@ public class Sequence extends JComponent {
   }
   public void paintComponent(Graphics g) {
       // g.drawString(this + "", 80, 120); 
-      for (int index = 0; index < this.values.size(); index += 1) {
-          this.circles.get(index).draw(g); 
+      for (int index = 0; index < this.values.size()-1; index += 1) {
+          Circle a = this.circles.get(index),
+                 b = this.circles.get(index+1); 
+          a.draw(g);
+          g.drawLine(a.x+a.radius, a.y+a.radius, b.x+b.radius, b.y+b.radius);
       }
+      this.circles.get(this.values.size()-1).draw(g);
+      
   }
   public static void main(String[] args) {    
     Sequence m = new Sequence( new int[] { 6, 2, 1, 4, 3, 5 } ); 
