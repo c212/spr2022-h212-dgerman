@@ -18,7 +18,7 @@ public class Screen extends JComponent implements MouseMotionListener, MouseList
     }
     public void mouseEntered(MouseEvent e) { 
         System.out.println("In");
-    }
+    } 
     public void mouseExited(MouseEvent e) { 
         System.out.println("Out");
     }

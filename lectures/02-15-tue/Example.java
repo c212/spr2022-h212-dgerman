@@ -1,6 +1,6 @@
 import javax.swing.JFrame;
 
-public class Example {
+public class Example { 
     public static void main(String[] args) {
         
         JFrame a = new JFrame("The Challenge");
